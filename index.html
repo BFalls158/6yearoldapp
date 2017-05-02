@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>6 Year Old Simulator</title>
+</head>
+
+<body ng-app="ourApp" ng-controller="firstController">
+
+<button ng-click="addWord(1)">Words</button>
+<button ng-click="addWord(1, true)">Fancy Words</button>
+<button ng-click="addWord(3)">More Words</button>
+<button ng-click="addWord(3, true)">More Fancy Words</button>
+
+<p>
+	<span ng-repeat="word in currentWords" class="{{word.isFancy ? getRandom() : ''}}">{{" " + word.text }}</span>
+</p>
+
+
+<script type="text/javascript" src="scripts/angular.min.js"></script>
+<script type="text/javascript" src="scripts/angular-route.min.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/firstController.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.underline {
+	text-decoration: underline;
+}
+
+.pink {
+	color: pink;
+}
+
+.circle {
+	border: 1px solid purple;
+	border-radius: 50%; 
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.blue {
+	color: blue;
+}
+
+.bubble {
+
+}
+
+.shadow {
+	text-shadow: 1px 1px 4px black;
+}
+
+.large {
+	font-size: 26px;
+}
+
+.small {
+	font-size: 8px;
+}
+
+.dotted {
+	border-style: dotted;
+}
