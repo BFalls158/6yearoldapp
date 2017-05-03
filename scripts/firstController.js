@@ -35,26 +35,25 @@ app.controller('firstController', function($scope){
 		if (b) {
 			for(var i = 0; i < x; i++) {
 				if($scope.nextWord === 0){
-					$scope.currentWords.push({text: $scope.subjects[Math.floor(Math.random()*$scope.subjects.length)], isFancy: true});
-					$scope.nextWord++;
+					$scope.currentWords.push({text: $scope.subjects[Math.floor(Math.random()*$scope.subjects.length)], isFancy: $scope.getRandom()});					$scope.nextWord++;
 				} else if ($scope.nextWord === 1) {
-					$scope.currentWords.push({text: $scope.verbs[Math.floor(Math.random()*$scope.verbs.length)], isFancy: true});
+					$scope.currentWords.push({text: $scope.verbs[Math.floor(Math.random()*$scope.verbs.length)], isFancy: $scope.getRandom()});
 					$scope.nextWord++;
 				} else {
-					$scope.currentWords.push({text: $scope.adjectives[Math.floor(Math.random()*$scope.adjectives.length)], isFancy: true});
+					$scope.currentWords.push({text: $scope.adjectives[Math.floor(Math.random()*$scope.adjectives.length)], isFancy: $scope.getRandom()});
 					$scope.nextWord = 0;
 				};
 			};
 		} else {
 			for(var i = 0; i < x; i++) {
 				if ($scope.nextWord === 0){
-					$scope.currentWords.push({text: $scope.subjects[Math.floor(Math.random()*$scope.subjects.length)], isFancy: false});
+					$scope.currentWords.push({text: $scope.subjects[Math.floor(Math.random()*$scope.subjects.length)], isFancy: "none"});
 					$scope.nextWord++;
 				} else if ($scope.nextWord === 1){
-					$scope.currentWords.push({text: $scope.verbs[Math.floor(Math.random()*$scope.verbs.length)], isFancy: false});
+					$scope.currentWords.push({text: $scope.verbs[Math.floor(Math.random()*$scope.verbs.length)], isFancy: "none"});
 					$scope.nextWord++;
 				} else {
-					$scope.currentWords.push({text: $scope.adjectives[Math.floor(Math.random()*$scope.adjectives.length)], isFancy: false});
+					$scope.currentWords.push({text: $scope.adjectives[Math.floor(Math.random()*$scope.adjectives.length)], isFancy: "none"});
 					$scope.nextWord === 0;
 				};
 			};

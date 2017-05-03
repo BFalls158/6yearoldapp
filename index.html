@@ -15,7 +15,7 @@
 <button ng-click="addWord(3, true)">More Fancy Words</button>
 </div>
 <p>
-	<span ng-repeat="word in currentWords" class="{{word.isFancy ? getRandom() : ''}}">{{" " + word.text }}</span>
+	<span ng-repeat="word in currentWords" class="{{word.isFancy}}">{{" " + word.text }}</span>
 </p>
 
 
