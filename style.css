@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Chicle|Roboto');
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+.btn-div {
+	text-align: center;
+	background-color: peachpuff;
+}
+
 .underline {
 	text-decoration: underline;
 }
@@ -24,7 +35,7 @@
 }
 
 .bubble {
-
+	font-family: 'Chicle', cursive; 
 }
 
 .shadow {
@@ -36,9 +47,9 @@
 }
 
 .small {
-	font-size: 8px;
+	font-size: 6px;
 }
 
 .dotted {
-	border-style: dotted;
+	border-style: 1px green dotted;
 }

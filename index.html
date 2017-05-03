@@ -7,11 +7,13 @@
 
 <body ng-app="ourApp" ng-controller="firstController">
 
+
+<div class='btn-div'>
 <button ng-click="addWord(1)">Words</button>
 <button ng-click="addWord(1, true)">Fancy Words</button>
 <button ng-click="addWord(3)">More Words</button>
 <button ng-click="addWord(3, true)">More Fancy Words</button>
-
+</div>
 <p>
 	<span ng-repeat="word in currentWords" class="{{word.isFancy ? getRandom() : ''}}">{{" " + word.text }}</span>
 </p>
